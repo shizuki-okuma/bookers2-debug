@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'create/destroy'
   get 'followings' => 'relationships#followings', as: 'followings'
   get 'followers' => 'relationships#followers', as: 'followers'
+  get 'search' => 'searches#search_result', as: 'search'
   devise_for :users
   get "home/about"=>"homes#about"
   root to: "homes#top"
