@@ -27,7 +27,7 @@
           <td id="favorite-btn<%= @book.id %>">
             <%= render 'favorites/favorite-btn', book: @book %>
           </td>
-            
+          <td><%= render partial: "reviews/show_rate", locals: { book: @book } %></td>
         </tr>
         </div>
       </table>
